@@ -59,11 +59,13 @@ public class IndexController {
 //        productService.saveProduct(p3);
 
 
-        User u1 = new User(UUID.randomUUID().toString(),"Jan","dfsdfsd","asdasda","sadasda",1,"user");
+        User u1 = new User(UUID.randomUUID().toString(),"John31","dfsd3534fsd","Jan","Przybylski",1,"admin");
         userService.saveUser(u1);
 
+        User u2 = new User(UUID.randomUUID().toString(),"Krzyszto13","d1dadf1231sd","Krzysztof","Czerwiński",1,"admin");
+        userService.saveUser(u2);
 
-        return "Model Generated";
+        return "Model wygenerowany";
     }
 
 }
