@@ -41,6 +41,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void voteOnUser(Integer id) {userRepository.count();}
+
+    @Override
     public Boolean checkIfExist(Integer id) {
         if (userRepository.checkIfExist(id) > 0)
             return true;

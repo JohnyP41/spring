@@ -13,6 +13,8 @@ public interface UserService {
 
     void deleteUser(Integer id);
 
+    void voteOnUser(Integer id);
+
     Boolean checkIfExist(Integer id);
 
     public Iterable<User> listAllUsersPaging(Integer pageNr, Integer howManyOnPage);
